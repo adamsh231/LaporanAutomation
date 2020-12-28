@@ -1,4 +1,5 @@
 ﻿using Laporan_Automation.Library;
+using Laporan_Automation.Library.RL53;
 using OfficeOpenXml;
 using System;
 using System.Collections.Generic;
@@ -15,47 +16,53 @@ namespace Laporan_Automation
 {
     public partial class RL53 : Form
     {
-        private static OpenFileDialog ofd { get; set; }
-        private static ExcelPackage excel { get; set; }
-        private static ExcelWorksheet workSheet { get; set; }
-
         public RL53()
         {
             InitializeComponent();
-            ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
         }
 
         private void Button_10Besar_Click(object sender, EventArgs e)
         {
-            try
+            TextBox_10Besar.Text = MainRL53.OpenAndSave("10Besar");
+        }
+
+        private void Button_Kematian_Click(object sender, EventArgs e)
+        {
+            TextBox_Kematian.Text = MainRL53.OpenAndSave("Kematian");
+        }
+
+        private void Button_Hidup_Click(object sender, EventArgs e)
+        {
+            TextBox_Hidup.Text = MainRL53.OpenAndSave("Hidup");
+        }
+
+        private void Button_Laporan_Click(object sender, EventArgs e)
+        {
+            TextBox_Laporan.Text = MainRL53.OpenAndSave("Laporan");
+        }
+
+        private async void Button_Process_Click(object sender, EventArgs e)
+        {
+            if (MainRL53.checkFiles())
             {
-                ofd = new OpenFileDialog();
-                ofd.Filter = "Excel Files|*.xls;"; //Jika multiple butuh detect file
-                ofd.Multiselect = false;
-                if(ofd.ShowDialog() == DialogResult.OK)
-                {
-                    TextBox_10Besar.Text = ofd.SafeFileName;
-
-                    FileInfo fileInfo = new FileInfo(ofd.FileName);
-                    string path = ofd.FileName;
-                    string new_path = ExcelConverter.ConvertXLS_XLSX(fileInfo);
-                    FileInfo new_fileinfo = new FileInfo(new_path);
-
-                    excel = new ExcelPackage(new_fileinfo);
-                    workSheet = excel.Workbook.Worksheets[0];
-                    workSheet.Cells["D11"].Value = "SAMLEKOM MAMANGGG!!!!";
-                    excel.Save();
-
-                    File.Delete(path);
-                    ExcelConverter.ConvertXLSX_XLS(new_fileinfo);
-                    File.Delete(new_path);
-                }
-
+                LoadingState(true);
+                await Task.Run(() => MainRL53.Process());
+                MessageBox.Show("Done!");
+                LoadingState(false);
+                this.Close();
             }
-            catch (Exception er)
+            else
             {
-                MessageBox.Show(er.Message);
+                MessageBox.Show("Please complete file first, before processing!");
             }
+        }
+
+        private void LoadingState(bool isLoading)
+        {
+            GB_Input.Enabled = !isLoading;
+            GB_Output.Enabled = !isLoading;
+            Button_Process.Enabled = !isLoading;
+            Loading.Visible = isLoading;
         }
     }
 }

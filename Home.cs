@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OfficeOpenXml;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,12 +15,15 @@ namespace Laporan_Automation
         public Home()
         {
             InitializeComponent();
+            ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
         }
 
         private void RL53_Click(object sender, EventArgs e)
         {
+            this.Hide();
             RL53 open_rl53 = new RL53();
-            open_rl53.Show();
+            open_rl53.ShowDialog();
+            this.Show();
         }
     }
 }

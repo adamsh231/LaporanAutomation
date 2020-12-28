@@ -35,7 +35,7 @@
             // 
             this.RL53.Location = new System.Drawing.Point(12, 12);
             this.RL53.Name = "RL53";
-            this.RL53.Size = new System.Drawing.Size(227, 38);
+            this.RL53.Size = new System.Drawing.Size(444, 38);
             this.RL53.TabIndex = 2;
             this.RL53.Text = "RL 5.3";
             this.RL53.UseVisualStyleBackColor = true;
@@ -45,7 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(251, 62);
+            this.ClientSize = new System.Drawing.Size(468, 62);
             this.Controls.Add(this.RL53);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -4,10 +4,11 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Laporan_Automation.Library
 {
-    class ExcelConverter
+    class Helper
     {
         public static string ConvertXLS_XLSX(FileInfo file)
         {
@@ -31,6 +32,14 @@ namespace Laporan_Automation.Library
             wb.Close();
             app.Quit();
             return xlsFile;
+        }
+
+        public static OpenFileDialog OpenFile(string filter = "Excel Files|*.xls;", bool multiselect = false)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = filter;
+            ofd.Multiselect = multiselect;
+            return ofd;
         }
     }
 }
