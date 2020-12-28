@@ -1,0 +1,22 @@
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\bin\Release\Laporan Automation.exe.config
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\bin\Release\Laporan Automation.exe
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\bin\Release\Laporan Automation.pdb
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\bin\Release\BouncyCastle.Crypto.dll
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\bin\Release\EPPlus.dll
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\bin\Release\Microsoft.IO.RecyclableMemoryStream.dll
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\bin\Release\System.ComponentModel.Annotations.dll
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\bin\Release\BouncyCastle.Crypto.xml
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\bin\Release\EPPlus.xml
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\bin\Release\ICSharpCode.SharpZipLib.pdb
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\bin\Release\ICSharpCode.SharpZipLib.xml
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\bin\Release\Microsoft.IO.RecyclableMemoryStream.xml
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\obj\Release\Laporan Automation.csprojAssemblyReference.cache
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\obj\Release\Laporan_Automation.Home.resources
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\obj\Release\Laporan_Automation.Properties.Resources.resources
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\obj\Release\Laporan_Automation.RL53.resources
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\obj\Release\Laporan Automation.csproj.GenerateResource.cache
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\obj\Release\Laporan Automation.csproj.CoreCompileInputs.cache
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\obj\Release\Laporan Automation.csproj.CopyComplete
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\obj\Release\Laporan Automation.exe
+E:\TUGAS\C#\Raycall\Program\Laporan Automation\obj\Release\Laporan Automation.pdb

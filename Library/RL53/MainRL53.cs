@@ -28,6 +28,10 @@ namespace Laporan_Automation.Library.RL53
             }
             else
             {
+                if (files.ContainsKey(name))
+                {
+                    files.Remove(name);
+                }
                 return "Error!, Please Try Again";
             }
         }

@@ -45,11 +45,15 @@ namespace Laporan_Automation
         {
             if (MainRL53.checkFiles())
             {
-                LoadingState(true);
-                await Task.Run(() => MainRL53.Process());
-                MessageBox.Show("Done!");
-                LoadingState(false);
-                this.Close();
+                DialogResult result = MessageBox.Show("Are u sure? Please check with correct file before processing!", "Process", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                if (result.Equals(DialogResult.OK))
+                {
+                    LoadingState(true);
+                    await Task.Run(() => MainRL53.Process());
+                    MessageBox.Show("Process Complete!");
+                    LoadingState(false);
+                    this.Close();
+                }
             }
             else
             {
