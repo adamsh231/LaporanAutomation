@@ -57,16 +57,17 @@
             // 
             // Button_10Besar
             // 
-            this.Button_10Besar.Location = new System.Drawing.Point(555, 28);
+            this.Button_10Besar.Location = new System.Drawing.Point(555, 33);
             this.Button_10Besar.Name = "Button_10Besar";
-            this.Button_10Besar.Size = new System.Drawing.Size(75, 31);
+            this.Button_10Besar.Size = new System.Drawing.Size(52, 22);
             this.Button_10Besar.TabIndex = 1;
-            this.Button_10Besar.Text = "Open";
+            this.Button_10Besar.Text = "...";
             this.Button_10Besar.UseVisualStyleBackColor = true;
             this.Button_10Besar.Click += new System.EventHandler(this.Button_10Besar_Click);
             // 
             // TextBox_Kematian
             // 
+            this.TextBox_Kematian.Enabled = false;
             this.TextBox_Kematian.Location = new System.Drawing.Point(189, 68);
             this.TextBox_Kematian.Name = "TextBox_Kematian";
             this.TextBox_Kematian.Size = new System.Drawing.Size(345, 22);
@@ -74,11 +75,12 @@
             // 
             // Button_Kematian
             // 
-            this.Button_Kematian.Location = new System.Drawing.Point(555, 65);
+            this.Button_Kematian.Enabled = false;
+            this.Button_Kematian.Location = new System.Drawing.Point(555, 68);
             this.Button_Kematian.Name = "Button_Kematian";
-            this.Button_Kematian.Size = new System.Drawing.Size(75, 31);
+            this.Button_Kematian.Size = new System.Drawing.Size(52, 22);
             this.Button_Kematian.TabIndex = 3;
-            this.Button_Kematian.Text = "Open";
+            this.Button_Kematian.Text = "...";
             this.Button_Kematian.UseVisualStyleBackColor = true;
             this.Button_Kematian.Click += new System.EventHandler(this.Button_Kematian_Click);
             // 
@@ -91,11 +93,11 @@
             // 
             // Button_Hidup
             // 
-            this.Button_Hidup.Location = new System.Drawing.Point(555, 102);
+            this.Button_Hidup.Location = new System.Drawing.Point(555, 107);
             this.Button_Hidup.Name = "Button_Hidup";
-            this.Button_Hidup.Size = new System.Drawing.Size(75, 31);
+            this.Button_Hidup.Size = new System.Drawing.Size(52, 22);
             this.Button_Hidup.TabIndex = 5;
-            this.Button_Hidup.Text = "Open";
+            this.Button_Hidup.Text = "...";
             this.Button_Hidup.UseVisualStyleBackColor = true;
             this.Button_Hidup.Click += new System.EventHandler(this.Button_Hidup_Click);
             // 
@@ -108,11 +110,11 @@
             // 
             // Button_Laporan
             // 
-            this.Button_Laporan.Location = new System.Drawing.Point(555, 30);
+            this.Button_Laporan.Location = new System.Drawing.Point(555, 34);
             this.Button_Laporan.Name = "Button_Laporan";
-            this.Button_Laporan.Size = new System.Drawing.Size(75, 31);
+            this.Button_Laporan.Size = new System.Drawing.Size(52, 22);
             this.Button_Laporan.TabIndex = 7;
-            this.Button_Laporan.Text = "Open";
+            this.Button_Laporan.Text = "...";
             this.Button_Laporan.UseVisualStyleBackColor = true;
             this.Button_Laporan.Click += new System.EventHandler(this.Button_Laporan_Click);
             // 
@@ -123,7 +125,7 @@
             this.Button_Process.Size = new System.Drawing.Size(644, 31);
             this.Button_Process.TabIndex = 8;
             this.Button_Process.Text = "Process";
-            this.Button_Process.UseVisualStyleBackColor = true;
+            this.Button_Process.UseVisualStyleBackColor = false;
             this.Button_Process.Click += new System.EventHandler(this.Button_Process_Click);
             // 
             // label1
@@ -138,6 +140,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Enabled = false;
             this.label2.Location = new System.Drawing.Point(8, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 17);

@@ -45,7 +45,7 @@ namespace Laporan_Automation
         {
             if (MainRL53.checkFiles())
             {
-                DialogResult result = MessageBox.Show("Are u sure? Please check with correct file before processing!", "Process", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                DialogResult result = MessageBox.Show("Apa file sudah benar ?", "Process", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (result.Equals(DialogResult.OK))
                 {
                     LoadingState(true);

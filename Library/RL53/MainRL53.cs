@@ -43,7 +43,8 @@ namespace Laporan_Automation.Library.RL53
 
         public static bool checkFiles()
         {
-            string[] fileNames = { "10Besar", "Kematian", "Hidup", "Laporan" };
+            //string[] fileNames = { "10Besar", "Kematian", "Hidup", "Laporan" };
+            string[] fileNames = { "10Besar", "Hidup", "Laporan" };
             bool isComplete = true;
             foreach(var name in fileNames)
             {
