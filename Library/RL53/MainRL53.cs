@@ -11,7 +11,7 @@ namespace Laporan_Automation.Library.RL53
 {
     class MainRL53
     {
-        public static Dictionary<string, OpenFileDialog> files = new Dictionary<string, OpenFileDialog>();
+        private static Dictionary<string, OpenFileDialog> files = new Dictionary<string, OpenFileDialog>();
 
         public static string OpenAndSave(string name)
         {
@@ -41,7 +41,7 @@ namespace Laporan_Automation.Library.RL53
             ExcelProcess.Process(files);
         }
 
-        public static bool checkFiles()
+        public static bool CheckFiles()
         {
             //string[] fileNames = { "10Besar", "Kematian", "Hidup", "Laporan" };
             string[] fileNames = { "10Besar", "Hidup", "Laporan" };
@@ -54,6 +54,11 @@ namespace Laporan_Automation.Library.RL53
                 }
             }
             return isComplete;
+        }
+
+        public static void EmptyFilesDictionary()
+        {
+            files = new Dictionary<string, OpenFileDialog>();
         }
     }
 }

@@ -217,6 +217,7 @@
             this.Name = "RL53";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RL53";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RL53_FormClosing);
             this.GB_Input.ResumeLayout(false);
             this.GB_Input.PerformLayout();
             this.GB_Output.ResumeLayout(false);

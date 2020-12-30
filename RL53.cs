@@ -43,13 +43,14 @@ namespace Laporan_Automation
 
         private async void Button_Process_Click(object sender, EventArgs e)
         {
-            if (MainRL53.checkFiles())
+            if (MainRL53.CheckFiles())
             {
                 DialogResult result = MessageBox.Show("Apa file sudah benar ?", "Process", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (result.Equals(DialogResult.OK))
                 {
                     LoadingState(true);
                     await Task.Run(() => MainRL53.Process());
+                    MainRL53.EmptyFilesDictionary();
                     MessageBox.Show("Process Complete!");
                     LoadingState(false);
                     this.Close();
@@ -67,6 +68,11 @@ namespace Laporan_Automation
             GB_Output.Enabled = !isLoading;
             Button_Process.Enabled = !isLoading;
             Loading.Visible = isLoading;
+        }
+
+        private void RL53_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            MainRL53.EmptyFilesDictionary();
         }
     }
 }
